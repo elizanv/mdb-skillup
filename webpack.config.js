@@ -121,7 +121,7 @@ module.exports = (_, argv) => {
         filename: path.join(__dirname, 'dist', 'index.html'),
         template: path.join(__dirname, 'src', 'html', 'index.html'),
         minify: production,
-      }),
+      },),
       new MiniCssExtractPlugin({
         filename: `assets/css/${production ? '[name].[chunkhash].css' : '[name].css'}`,
         chunkFilename: `assets/css/${production ? '[id].[chunkhash].css' : '[id].css'}`,
