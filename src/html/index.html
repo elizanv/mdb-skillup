@@ -12,31 +12,36 @@
     <body>
 
     <section class="section-header">
-        <div class="section-inner">
+        <div class="section-header-inner">
           <div class="header__Logo">
-              <button></button>
+              <a>SOSA</a>
           </div>
           <div class="header__Female__content">
-              <button>женское</button>
+              <button class="btn btn-dark-content"><a>женское</a></button>
           </div>
           <div class="header__Male__content">
-              <button>мужское</button>
+              <button class="btn btn-dark-content"><a>мужское</a></button>
           </div>
           <div class="header__Child__content">
-              <button>детское</button>
+              <button class="btn btn-dark-content"><a>детское</a></button>
           </div>
           <div class="header__Search">
-              <input type="search">
+              <div class="input-group">
+                  <input class="form-control my-0 py-1 red-border" type="text" placeholder="Искать" aria-label="Search">
+                  <div class="input-group-append">
+                      <span class="input-group-text dark lighten-3" id="basic-text1">
+                      <i class="fas fa-search text-grey" aria-hidden="true"></i></span>
+                  </div>
+              </div>
           </div>
           <div class="header__Profile">
-              <button></button>
+              <button class="btn btn-dark-icons"><i class="fas fa-user"></i></button>
           </div>
           <div class="header__Favorites">
-              <button></button>
+              <button class="btn btn-dark-icons"><i class="far fa-heart"></i></button>
           </div>
           <div class="header__Basket">
-              <button></button>
-          </div>
+              <button class="btn btn-dark-icons"><i class="fas fa-shopping-basket"></i></button>
         </div>
     </section>
 
