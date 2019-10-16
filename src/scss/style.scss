@@ -34,3 +34,11 @@ html [type='button'],
   -moz-appearance: none;
   appearance: none;
 }
+
+// Header Styles
+@import "Header.scss";
+
+// Normalize Scss
+@import "Normalize.scss";
+
+

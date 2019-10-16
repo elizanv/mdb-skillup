@@ -1,0 +1,74 @@
+/* Colors */
+$black: #2d2d2d;
+$white: #ffffff;
+$gray: #525050;
+
+/* Fonts */
+$font-family-base: futura-pt,sans-serif;
+
+.section-header {
+  background-color: $black;
+}
+
+.section-header-inner {
+  display: flex;
+  justify-content: center;
+  max-height: 60px;
+  width: 100%;
+}
+
+.header__Logo {
+  color: $white;
+  font-family: $font-family-base;
+  font-size: 45px;
+  padding-right: 20px;
+  font-weight: bold;
+  letter-spacing: -4px;
+  border-right-color: $white;
+}
+
+.header__Search {
+  width: 600px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.form-control {
+  border-radius: 20px;
+}
+
+.input-group {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.header__Profile, .header__Favorites, .header__Basket {
+  color: $white;
+  padding-right: 25px;
+  border: #525051;
+  font-size: 30px;
+}
+
+.fa-shopping-basket, .fa-heart, .fa-user {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.btn-dark-icons {
+  padding: 0;
+  border: none;
+}
+
+.btn-dark-content {
+  font-weight: bold;
+  font-size: 15px;
+  color: $white;
+  font-family: $font-family-base;
+}
+
+.btn-dark-content:hover {
+  color: $gray;
+}
+.btn-dark-icons:hover {
+  color: $gray;
+}
