@@ -1,8 +1,46 @@
-.section_header {
+.navbar-expand-lg {
   display: flex;
+  justify-content: center;
 }
 
-.header__Female__content {
-  color: orange;
-  background-color: red;
+.navbar-brand {
+  font-weight: bold;
+  font-family: futura-pt, sans-serif;
+  font-size: 45px;
+  letter-spacing: -4px;
+}
+.nav-item {
+  font-weight: bold;
+  font-family: futura-pt, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin: auto;
+}
+
+.content {
+  width: 150px !important;
+  padding-left: 20px;
+}
+
+.nav-search {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.form-control {
+  border-radius: 20px;
+}
+
+.input-group {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.fa-shopping-basket, .fa-heart, .fa-user {
+  font-size: 20px;
+}
+
+.Icon {
+  padding-right: 15px;
 }
