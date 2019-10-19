@@ -1,0 +1,30 @@
+$br-color: 1px solid #eee;
+$black: #212121;
+$white: #ffffff;
+
+.Footer__icons {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  border-top: $br-color;
+  border-bottom: $br-color;
+  text-align: center;
+  padding: 12px;
+}
+
+.Footer__icons__social {
+  padding-right: 60px;
+}
+
+.Footer__icons__Pay {
+  border-left: $br-color;
+  padding-left: 60px;
+}
+
+.fa-facebook-square, .fa-instagram, .fa-google-plus-square, .fa-twitter-square, .fa-credit-card, .fa-cc-paypal, .fa-cc-apple-pay, .fa-cc-mastercard {
+  padding: 20px;
+}
+
+.text-uppercase {
+  font-family: futura-pt, sans-serif;
+}
