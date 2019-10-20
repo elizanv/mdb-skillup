@@ -122,6 +122,16 @@ module.exports = (_, argv) => {
         template: path.join(__dirname, 'src', 'html', 'index.html'),
         minify: production,
       }),
+      new HtmlWebpackPlugin({
+        filename: path.join(__dirname, 'dist', 'cart.html'),
+        template: path.join(__dirname, 'src', 'html', 'cart.html'),
+        minify: production,
+      }),
+      new HtmlWebpackPlugin({
+        filename: path.join(__dirname, 'dist', 'products.html'),
+        template: path.join(__dirname, 'src', 'html', 'products.html'),
+        minify: production,
+      }),
       new MiniCssExtractPlugin({
         filename: `assets/css/${production ? '[name].[chunkhash].css' : '[name].css'}`,
         chunkFilename: `assets/css/${production ? '[id].[chunkhash].css' : '[id].css'}`,
