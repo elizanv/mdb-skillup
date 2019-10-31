@@ -14,143 +14,91 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
-  <style>
-  html,
-  body,
-  header,
-  .carousel{
-    height: 60vh;
-}
-@media (max-width: 740px){
-  html,
-  body,
-  header,
-  .carousel{
-    height: 100vh;
-}}
-@media (max-width: 800px) and (max-width:850px){
-  html,
-  body,
-  header,
-  .carousel{
-    height: 100vh;
-}}
-
-  </style>
+ 
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg px-4">
+        <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+          <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                   <a href="#" class="nav-link waves-effect">Home</a>
+                </li>
+                <li class="nav-item ">
+                   <a href="#" class="nav-link waves-effect">Product</a>
+                </li>
+                <li class="nav-item">
+                   <a href="#" class="nav-link waves-effect">About us</a>
+                </li>
+                <li class="nav-item">
+                   <a href="#" class="nav-link waves-effect">Blog</a>
+                </li>
+             </ul>
+          <div class="nav-info-items d-none d-lg-flex ">
+            <!-- single info -->
+            <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+                <ul class="navbar-nav nav-flex-icons">
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-<div class="container">
-<a href="#" class="navbar-brand waves-effect">
-<strong class="blue-text">My page</strong>
-</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarContent">
-  <ul class="navbar-nav mr-auto">
-     <li class="nav-item active">
-        <a href="#" class="nav-link waves-effect">Home</a>
-     </li>
-     <li class="nav-item ">
-        <a href="#" class="nav-link waves-effect">Product</a>
-     </li>
-     <li class="nav-item">
-        <a href="#" class="nav-link waves-effect">About us</a>
-     </li>
-     <li class="nav-item">
-        <a href="#" class="nav-link waves-effect">Blog</a>
-     </li>
-  </ul>
-  <ul class="navbar-nav nav-flex-icons">
-    <li class="nav-item">
-    <a href="#" class="nav-link waves-effect">
-      <span class="badge red z-depth-1 mr-1">1</span>
-      <i class="fa fa-shopping-cart"></i>
-      <span class="clearfix d-none d-sm-inline-block">Cart</span>
-    </a>
-    </li>
-    <li class="nav-item">
-        <a href="#" class="nav-link waves-effect">
-          <i class="fab fa-facebook-f fa-fw blue-text"></i>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a href="#" class="nav-link waves-effect">
-          <i class="fab fa-twitter fa-fw blue-text"></i>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a href="#" class="nav-link border border-light rounded waves-effect">
-          <i class="fab fa-github"></i>
-        </a>
-    </li>
-  </ul>
-</div>
-</div>
-</nav>
-<!--Carousel Wrapper-->
-<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-2" data-slide-to="1"></li>
-      <li data-target="#carousel-example-2" data-slide-to="2"></li>
-    </ol>
-    <!--/.Indicators-->
-    <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <div class="view">
-          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
-            alt="First slide">
-          <div class="mask rgba-black-light"></div>
+
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com" class="nav-link waves-effect">
+                          <i class="fab fa-facebook-f fa-fw blue-text"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://twitter.com/?lang=ru" class="nav-link waves-effect">
+                          <i class="fab fa-twitter fa-fw blue-text"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com" class="nav-link border border-light rounded waves-effect">
+                          <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                  </ul>
+            </div>
+           
+            <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+              <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+              <p class="mb-0 text-capitalize"><span id="item-count"></span> items - $<span class="item-total"></span></p>
+            </div>
+            
+          </div>
         </div>
-        <div class="carousel-caption">
-          <h3 class="h3-responsive">Light mask</h3>
-          <p>First text</p>
-        </div>
+      </nav>
+<div class="container-fluid">
+    <div class="row max-height justify-content-center align-items-center bnr">
+      <div class="col-10 mx-auto banner text-center">
+        <h1 class="text-capitalize "><strong class="banner-title ">welcome to My Page</strong></h1>
+        <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+
       </div>
-      <div class="carousel-item">
-        <!--Mask color-->
-        <div class="view">
-          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
-            alt="Second slide">
-          <div class="mask rgba-black-strong"></div>
+      <div class="container content-section cart" id="cart">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row cart-item">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
-        <div class="carousel-caption">
-          <h3 class="h3-responsive">Strong mask</h3>
-          <p>Secondary text</p>
+        <div class="cart-items">
         </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
       </div>
-      <div class="carousel-item">
-        <!--Mask color-->
-        <div class="view">
-          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
-            alt="Third slide">
-          <div class="mask rgba-black-slight"></div>
-        </div>
-        <div class="carousel-caption">
-          <h3 class="h3-responsive">Slight mask</h3>
-          <p>Third text</p>
-        </div>
+        <!--end of  cart buttons -->
+        <!--  -->
       </div>
     </div>
-    <!--/.Slides-->
-    <!--Controls-->
-    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-    <!--/.Controls-->
   </div>
-  
+
+
   <main>
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark mdb-color lighten-3 mt-3 mb-5">
@@ -181,212 +129,117 @@
             </form>
           </div>
       </nav>
-      <section class="text-center mb-4">
-        <div class="row wow fadeIn">
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card">
-              <div class="view overlay">
-                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEqRQklSldOHKJsmiRBq36Td7aaMOMMICoCN6xvucjJrk72HVLw" alt="Joe">
-                 <a href="#">
-                   <div class="mask rgba-white-slight"></div>
-                 </a>
-              </div>
-
-              <div class="card-body text-center">
-                <a href="#" class="grey-text">
-                  <h5>T-shirt</h5>
-                </a>
-                <h5>
-                  <strong>
-                    <a href="#" class="dark-grey-text">Joe t-shirt <span class="badge badge-pill danger-color">NEW</span></a>
-                  </strong>
-                </h5>
-                <h4 class="font-weight-bold blue-text">
-                  <strong>50$</strong>
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-              <div class="card">
-                <div class="view overlay">
-                  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEqRQklSldOHKJsmiRBq36Td7aaMOMMICoCN6xvucjJrk72HVLw" alt="Joe">
-                   <a href="#">
-                     <div class="mask rgba-white-slight"></div>
-                   </a>
-                </div>
-  
-                <div class="card-body text-center">
-                  <a href="#" class="grey-text">
-                    <h5>T-shirt</h5>
-                  </a>
-                  <h5>
-                    <strong>
-                      <a href="#" class="dark-grey-text">Joe t-shirt <span class="badge badge-pill danger-color">NEW</span></a>
-                    </strong>
-                  </h5>
-                  <h4 class="font-weight-bold blue-text">
-                    <strong>50$</strong>
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card">
-                  <div class="view overlay">
-                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEqRQklSldOHKJsmiRBq36Td7aaMOMMICoCN6xvucjJrk72HVLw" alt="Joe">
-                     <a href="#">
-                       <div class="mask rgba-white-slight"></div>
-                     </a>
-                  </div>
-    
-                  <div class="card-body text-center">
-                    <a href="#" class="grey-text">
-                      <h5>T-shirt</h5>
-                    </a>
-                    <h5>
-                      <strong>
-                        <a href="#" class="dark-grey-text">Joe t-shirt <span class="badge badge-pill danger-color">NEW</span></a>
-                      </strong>
-                    </h5>
-                    <h4 class="font-weight-bold blue-text">
-                      <strong>50$</strong>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 mb-4">
-                  <div class="card">
-                    <div class="view overlay">
-                      <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEqRQklSldOHKJsmiRBq36Td7aaMOMMICoCN6xvucjJrk72HVLw" alt="Joe">
-                       <a href="#">
-                         <div class="mask rgba-white-slight"></div>
-                       </a>
-                    </div>
-      
-                    <div class="card-body text-center">
-                      <a href="#" class="grey-text">
-                        <h5>T-shirt</h5>
-                      </a>
-                      <h5>
-                        <strong>
-                          <a href="#" class="dark-grey-text">Joe t-shirt <span class="badge badge-pill danger-color">NEW</span></a>
-                        </strong>
-                      </h5>
-                      <h4 class="font-weight-bold blue-text">
-                        <strong>50$</strong>
-                      </h4>
-                    </div>
-                  </div>
-                </div>
         </div>
-        <div class="row wow fadeIn">
-            <div class="col-lg-3 col-md-6 mb-4">
-              <div class="card">
-                <div class="view overlay">
-                  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEqRQklSldOHKJsmiRBq36Td7aaMOMMICoCN6xvucjJrk72HVLw" alt="Joe">
-                   <a href="#">
-                     <div class="mask rgba-white-slight"></div>
-                   </a>
-                </div>
-  
-                <div class="card-body text-center">
-                  <a href="#" class="grey-text">
-                    <h5>T-shirt</h5>
-                  </a>
-                  <h5>
-                    <strong>
-                      <a href="#" class="dark-grey-text">Joe t-shirt <span class="badge badge-pill danger-color">NEW</span></a>
-                    </strong>
-                  </h5>
-                  <h4 class="font-weight-bold blue-text">
-                    <strong>50$</strong>
-                  </h4>
-                </div>
+                
               </div>
+              <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">T-Shirt</span>
+                    <img class="shop-item-image img-fluid z-depth-4 rounded" src="http://cdn.shopify.com/s/files/1/2597/4920/products/wbbhoiat01b_1024x1024.jpg?v=1536699501g">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Joe T-shirt</span>
+                    <img class="shop-item-image img-fluid z-depth-4 rounded" src="data:image/jpeg;base64,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">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$10.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                  <span class="shop-item-title">Dog T-Shirt</span>
+                  <img class="shop-item-image img-fluid z-depth-4 rounded" src="https://thebuttonowl.co.uk/image/cache/sellers/2/border-collie-t-shirt-1000x1000.jpg">
+                  <div class="shop-item-details">
+                      <span class="shop-item-price">$6.99</span>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+              </div>
+              <div class="shop-item">
+                <span class="shop-item-title">NASA</span>
+                <img class="shop-item-image img-fluid z-depth-4 rounded" src="https://sciencemuseum.images.blucommerce.com/sciencemuseum/product/NASA-LOGO-T-SHIRT-415477.jpg?auto=format%2Ccompress&bluhash=f5736a17ebad6d43144e739c49f161f8&s=64fa47786a230f21a2b1781489fb6bc3">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$6.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card">
-                  <div class="view overlay">
-                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEqRQklSldOHKJsmiRBq36Td7aaMOMMICoCN6xvucjJrk72HVLw" alt="Joe">
-                     <a href="#">
-                       <div class="mask rgba-white-slight"></div>
-                     </a>
-                  </div>
-    
-                  <div class="card-body text-center">
-                    <a href="#" class="grey-text">
-                      <h5>T-shirt</h5>
-                    </a>
-                    <h5>
-                      <strong>
-                        <a href="#" class="dark-grey-text">Joe t-shirt <span class="badge badge-pill danger-color">NEW</span></a>
-                      </strong>
-                    </h5>
-                    <h4 class="font-weight-bold blue-text">
-                      <strong>50$</strong>
-                    </h4>
-                  </div>
-                </div>
+            <div class="shop-item">
+              <span class="shop-item-title">Jimmy Fallon</span>
+              <img class="shop-item-image img-fluid z-depth-4 rounded" src="https://www.nbcstore.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/t/o/tonightshow_logo_mens_shortsleeve_tshirt_athleticheather_7.jpg">
+              <div class="shop-item-details">
+                  <span class="shop-item-price">$6.99</span>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
               </div>
-              <div class="col-lg-3 col-md-6 mb-4">
-                  <div class="card">
-                    <div class="view overlay">
-                      <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEqRQklSldOHKJsmiRBq36Td7aaMOMMICoCN6xvucjJrk72HVLw" alt="Joe">
-                       <a href="#">
-                         <div class="mask rgba-white-slight"></div>
-                       </a>
-                    </div>
-      
-                    <div class="card-body text-center">
-                      <a href="#" class="grey-text">
-                        <h5>T-shirt</h5>
-                      </a>
-                      <h5>
-                        <strong>
-                          <a href="#" class="dark-grey-text">Joe t-shirt <span class="badge badge-pill danger-color">NEW</span></a>
-                        </strong>
-                      </h5>
-                      <h4 class="font-weight-bold blue-text">
-                        <strong>50$</strong>
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card">
-                      <div class="view overlay">
-                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEqRQklSldOHKJsmiRBq36Td7aaMOMMICoCN6xvucjJrk72HVLw" alt="Joe">
-                         <a href="#">
-                           <div class="mask rgba-white-slight"></div>
-                         </a>
-                      </div>
-        
-                      <div class="card-body text-center">
-                        <a href="#" class="grey-text">
-                          <h5>T-shirt</h5>
-                        </a>
-                        <h5>
-                          <strong>
-                            <a href="#" class="dark-grey-text">Joe t-shirt <span class="badge badge-pill danger-color">NEW</span></a>
-                          </strong>
-                        </h5>
-                        <h4 class="font-weight-bold blue-text">
-                          <strong>50$</strong>
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
           </div>
-      </section>
+          <div class="shop-item">
+            <span class="shop-item-title">Virtus</span>
+            <img class="shop-item-image img-fluid z-depth-4 rounded" src="https://4frag.ru/image/cache/data/product/virtus-pro-casual-t-shirt-black-1-1000x1000.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$6.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Tapout</span>
+          <img class="shop-item-image img-fluid z-depth-4 rounded" src="https://geliar-store.com/image/cache/catalog/TAPOUT/59085802_l-1000x1000.jpg">
+          <div class="shop-item-details">
+              <span class="shop-item-price">$6.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">Dartmouth</span>
+        <img class="shop-item-image img-fluid z-depth-4 rounded" src="http://cdn.shopify.com/s/files/1/0065/7630/8335/products/mockup-b9379f40_1200x1200.jpg?v=1555516666">
+        <div class="shop-item-details">
+            <span class="shop-item-price">$6.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>
+    </div>
+    <div class="shop-item">
+      <span class="shop-item-title">Yoga Poses</span>
+      <img class="shop-item-image img-fluid z-depth-4 rounded" src="https://12ax7web.s3.amazonaws.com/accounts/1/products/imported/Yoga-Poses-lt-blue-chill-t-shirt-teeturtle-full-_6-1000x1000.jpg">
+      <div class="shop-item-details">
+          <span class="shop-item-price">$6.99</span>
+          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+      </div>
+  </div>
+  <div class="shop-item">
+    <span class="shop-item-title">Christmas</span>
+    <img class="shop-item-image img-fluid z-depth-4 rounded" src="https://lulahblu.co.uk/wp-content/uploads/2018/10/PERSONALISED-PENGUIN-ELF-T-SHIRT-1000x1000.jpg">
+    <div class="shop-item-details">
+        <span class="shop-item-price">$6.99</span>
+        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+</div>
+<div class="shop-item">
+  <span class="shop-item-title">Voodoo X Dolls</span>
+  <img class="shop-item-image img-fluid z-depth-4 rounded" src="https://cdn.shopify.com/s/files/1/1933/5585/products/voodoo-x-official-dolls-unisex-t-shirt.png?v=1562140388">
+  <div class="shop-item-details">
+      <span class="shop-item-price">$6.99</span>
+      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+  </div>
+</div>
+<div class="shop-item">
+  <span class="shop-item-title">Motor City</span>
+  <img class="shop-item-image img-fluid z-depth-4 rounded" src="https://cagedwilly.com/wp-content/uploads/2017/07/motor-city-shirt-sport-city-1000x1000.png">
+  <div class="shop-item-details">
+      <span class="shop-item-price">$6.99</span>
+      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+  </div>
+</div>
+</div>
+
+
       <nav class="d-flex justify-content-center wow fadeIn">
-        <ul class="pagination pg-blue">
+        <ul class="pagination pg-blue" id="Pages">
           <li class="page-item disabled">
             <a href="#" class="page-link" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
             </a>
           </li>
-          <li class="page-item active">
+          <li class="page-item">
               <a href="#" class="page-link" aria-label="Previous">
                 <span aria-hidden="true">1</span>
               </a>
@@ -428,25 +281,25 @@
      </div>
      <hr class="my-4">
      <div class="pb-4">
-       <a href="#">
+       <a href="https://www.facebook.com">
          <i class="fab fa-facebook-f mr-3"></i>
        </a>
-       <a href="#">
+       <a href="https://twitter.com/?lang=ru">
           <i class="fab fa-twitter  mr-3"></i>
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/?hl=ru">
             <i class="fab fa-instagram mr-3"></i>
           </a>
-          <a href="#">
+          <a href="https://aboutme.google.com">
               <i class="fab fa-google-plus mr-3"></i>
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com">
                 <i class="fab fa-linkedin mr-3"></i>
               </a>
-              <a href="#">
+              <a href="https://www.pinterest.com">
                   <i class="fab fa-pinterest mr-3"></i>
                 </a>
-                <a href="#">
+                <a href="https://github.com">
                     <i class="fab fa-github mr-3"></i>
                   </a>
      </div>
@@ -456,6 +309,7 @@
    </footer>
   <!-- SCRIPTS -->
   <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
@@ -463,6 +317,7 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
